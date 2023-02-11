@@ -1,0 +1,94 @@
+@import '~normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #343D4B;
+}
+
+img {
+  display: block;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 944px;
+  height: 623px;
+  background-color: #222831;
+  border-radius: 25px;
+}
+
+.city-info {
+  position: absolute;
+  left: -69px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 493px;
+  height: 665px;
+  background: linear-gradient(#88EBEF, #545CE6);
+  border-radius: 30px;
+  padding: 46px 32px 84px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+
+  &__week-day {
+    font-size: 37px;
+    font-weight: 700;
+  }
+
+  &__date {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  &__name {
+    position: relative;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 20px;
+
+    &-icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      display: inline-block;
+      width: 27px;
+      height: 27px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('../img/location.png');
+    }
+
+    &-text {
+      padding-left: 35px;
+    }
+  }
+
+  &__weather-icon {
+    width: 95px;
+    height: 95px;
+  }
+
+  &__weather-degree {
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 9px;
+  }
+
+  &__weather-name {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 13px;
+  }
+}
